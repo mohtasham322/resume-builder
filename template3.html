@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap/css/template3.css" />
+    <link rel="stylesheet" href="bootstrap/css/template4.css" />
+    <link rel="stylesheet" href="bootstrap/css/index.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <div class="dashboard dashboard_cv">
+      <a href="index.html" target="_blank">
+      <div class="logo">
+        <img class="logo" src="images/logo.png" alt="logo" />
+      </div></a>
+      <ul>
+        <div class="each_menu">
+          <i class="fa fa-shirtsinbulk" aria-hidden="true"></i>
+          <a href="/#ID_ResumeSumary" target="_blank">
+            <li>Resume summary</li>
+          </a>
+        </div>
+        <div class="each_menu">
+          <i class="fa fa-building" aria-hidden="true"></i>
+          <a href="/#ID_ResumeObj" target="_blank">
+            <li>objective</li>
+          </a>
+        </div>
+        <div class="each_menu">
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+          <a href="/#ID_ResumeExp" target="_blank">
+            <li>work experience</li>
+          </a>
+        </div>
+        <div class="each_menu">
+          <i class="fa fa-desktop" aria-hidden="true"></i>
+          <a href="/#ID_Resumeskill" target="_blank">
+            <li>skills list</li>
+          </a>
+        </div>
+        <div class="each_menu">
+          <i class="fa fa-book" aria-hidden="true"></i>
+          <a href="/#ID_Resumeedu" target="_blank">
+            <li>education list</li>
+          </a>
+        </div>
+
+        <div class="add_sect_div">
+          <div class="add_sect_main_btn" id="add_sec_btn">
+            <button type="button" class="add_section_btn">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+              add section
+              <i class="fa fa-angle-right" style="font-size: 24px"></i>
+            </button>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <div class="mult_sects" id="Id_mult_sec">
+      <ul class="mult_sects_ul">
+        <li class="add_btn" id="add_skill"><i class="fa fa-plus-circle"></i>add skills</li>
+        <li class="add_btn" id="add_hobbies"><i class="fa fa-plus-circle"></i>add hobbies</li>
+        <li class="add_btn" id="add_education"><i class="fa fa-plus-circle"></i>add education</li>
+        <li class="add_btn" id="add_highlights"><i class="fa fa-plus-circle"></i>add highlights</li>
+        <li class="add_btn" id="add_experience"><i class="fa fa-plus-circle"></i>add experience</li>
+    </ul>
+    </div>
+    <div class="main_cont_cv">
+      <div class="header_cv">
+        <button type="button" id="download_btn">
+          Download
+          <i class="fa fa-download"></i>
+        </button>
+      </div>
+      <div class="cv_div">
+        <page size="A4" id="cv">
+          <div id="content_div" class="t3div">
+            <div class="headsection">
+              <img id="ID_img" src="Images/t3_img.jpg " />
+
+              <div class="profileinput">
+                <input type="file" accept="image/*" id="img_input" onchange="uploadimg()" />
+                <label class="t2imglabel" id="img_label" for="img_input">Upload Profile</label>
+              </div>
+
+              <div class="t3flexdiv">
+                <div class="t3contact editblack" contenteditable="true">
+                  <b>Contact:</b>
+                  &nbsp;+1(647)755-6543
+                </div>
+                <div class="t3email editblack" contenteditable="true">
+                  <b>Email:</b>
+                  &nbsp;user@gmail.com
+                </div>
+              </div>
+
+              <div class="headtext">
+                <h1 class="editblack" contenteditable="true">Susan Williams</h1>
+              </div>
+
+              <div class="t3container1">
+                <p class="editblack" contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis culpa velit ipsum sit, molestiae voluptatem quas repellat placeat, minus qui ex rerum sed nesciunt quo? Et dolor culpa cum! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <div class="divflex">
+                  <div class="t3div1">
+                    <h3 class="t3h3">Experience</h3>
+                    <div class="editblack" contenteditable="true" id="experience_sec1">
+                      <div class="divflex">
+                        <div class="exp_sec1">
+                          <div><p class="date editblack" contenteditable="true">09/2015 to 05/2019</p></div>
+                          <div><h6 class="edit bold" contenteditable="true">Store Manager</h6></div>
+                          <p class="editblack" contenteditable="true">LUXUARY CAR CENTER, New York</p>
+                          <ul>
+                            <div id="experience1_sec1">
+                              <div class="list_exp1_sec1">
+                                <li class="editblack" id="exp_sec1_li1" contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                              </div>
+                              <div class="cross_exp1_sec1">
+                                <i id="cross_exp1_sec1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                              </div>
+                            </div>
+                            <div id="experience2_sec1">
+                              <div class="list_exp2_sec1">
+                                <li class="editblack" id="exp_sec2_li2" contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                              </div>
+                              <div class="cross_exp2_sec1">
+                                <i id="cross_exp2_sec1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                              </div>
+                            </div>
+                            <div id="experience3_sec1">
+                              <div class="list_exp2_sec1">
+                                <li class="editblack" id="exp_sec2_li3" contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                              </div>
+                              <div class="cross_exp3_sec1">
+                                <i id="cross_exp3_sec1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                              </div>
+                            </div>
+                            <div id="experience4_sec1">
+                              <div class="list_exp4_sec1">
+                                <li class="editblack" id="exp_sec1_li4" contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                              </div>
+                              <div class="cross_exp4_sec1">
+                                <i id="cross_exp4_sec1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                              </div>
+                            </div>
+                            <div id="experience5_sec1">
+                              <div class="list_exp5_sec1">
+                                <li class="editblack" id="exp_sec1_li5" contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                              </div>
+                              <div class="cross_exp5_sec1">
+                                <i id="cross_exp5_sec1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+                        <div class="cross_sec1">
+                          <i id="cross_sec1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="edit divflex" contenteditable="true" id="experience_sec2">
+                      <div class="exp_sec2">
+                        <p class="date editblack" contenteditable="true">09/2015 to 05/2019</p>
+
+                        <h6 class="edit bold" contenteditable="true">Store Manager</h6>
+                        <p class="editblack" contenteditable="true">JAPAN CAR CENTER, New York</p>
+                        <i id="cross_exp1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+
+                        <ul>
+                          <div id="experience1_sec2">
+                            <div class="list_exp1_sec2">
+                              <li class="editblack" id="exp_sec2_li1" contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                            </div>
+                            <div class="cross_exp1_sec2">
+                              <i id="cross_exp1_sec2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <div id="experience2_sec2">
+                            <div class="list_exp2_sec2">
+                              <li class="editblack" id="exp_sec2_li2" contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                            </div>
+                            <div class="cross_exp2_sec2">
+                              <i id="cross_exp2_sec2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <div id="experience3_sec2">
+                            <div class="list_exp3_sec2">
+                              <li class="editblack" id="exp_sec2_li3" contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus dolorem ipsum.</li>
+                            </div>
+                            <div class="cross_exp3_sec2">
+                              <i id="cross_exp3_sec2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <div id="experience4_sec2">
+                            <div class="list_exp4_sec2">
+                              <li class="editblack" id="exp_sec2_li4" contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            </div>
+                            <div class="cross_exp4_sec2">
+                              <i id="cross_exp4_sec2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </ul>
+                      </div>
+                      <div class="cross_sec2">
+                        <i id="cross_sec2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="edit divflex" contenteditable="true" id="experience_sec3">
+                      <div class="exp_sec3">
+                        <span class="date editblack" id="exp_date1" contenteditable="true">add starting/ending date</span>
+                        <br />
+                        <span class="editblack" id="exp_position1" contenteditable="true">add position</span>
+                        <br />
+                        <span class="edit" id="exp_address1" contenteditable="true">add address</span>
+                        <br />
+                        <i id="cross_exp3" class="fa fa-close cross_btn" aria-hidden="true"></i>
+
+                        <ul>
+                          <li class="edit" id="exp_sec3_li1" contenteditable="true">add experience</li>
+                          <li class="edit" id="exp_sec3_li2" contenteditable="true">add experience</li>
+                          <li class="edit" id="exp_sec3_li3" contenteditable="true">add experience</li>
+                        </ul>
+                      </div>
+                      <div class="cross_sec3">
+                        <i id="cross_sec3" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="edit divflex" contenteditable="true" id="experience_sec4">
+                      <div class="exp_sec4">
+                        <span class="date editblack" id="exp_date2" contenteditable="true">add starting/ending date</span>
+                        <span class="editblack" id="exp_position2" contenteditable="true">add position</span>
+                        <span class="editblack" id="exp_address2" contenteditable="true">add address</span>
+                        <br />
+                        <i id="cross_exp4" class="fa fa-close cross_btn" aria-hidden="true"></i>
+
+                        <ul>
+                          <li class="editblack" id="exp_sec4_li1" contenteditable="true">add experience</li>
+                          <li class="editblack" id="exp_sec4_li2" contenteditable="true">add experience</li>
+                          <li class="editblack" id="exp_sec4_li3" contenteditable="true">add experience</li>
+                        </ul>
+                      </div>
+                      <div class="cross_sec4">
+                        <i id="cross_sec4" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t3div2">
+                    <h3 class="t3h3">Highlights</h3>
+
+                    <ul>
+                      <div id="highlight1">
+                        <div class="list_high1">
+                          <li class="editblack" id="high_li1" contenteditable="true">Results-oriented</li>
+                        </div>
+                        <div class="cross_high1">
+                          <i id="cross_high1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div id="highlight2">
+                        <div class="list_high2">
+                          <li class="editblack" id="high_li2" contenteditable="true">Business development</li>
+                        </div>
+                        <div class="cross_high2">
+                          <i id="cross_high2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+
+                      <div id="highlight3">
+                        <div class="list_high3">
+                          <li class="editblack" id="high_li3" contenteditable="true">Effective marketing</li>
+                        </div>
+                        <div class="cross_high3">
+                          <i id="cross_high3" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div id="highlight4">
+                        <div class="list_high4">
+                          <li class="editblack" id="high_li4" contenteditable="true">Organisational capacity</li>
+                        </div>
+                        <div class="cross_high4">
+                          <i id="cross_high4" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div id="highlight5">
+                        <div class="list_high5">
+                          <li class="editblack" id="high_li5" contenteditable="true">Operability and Commitment</li>
+                        </div>
+                        <div class="cross_high5">
+                          <i id="cross_high5" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div id="highlight6">
+                        <div class="list_high6">
+                          <li class="editblack" id="high_li6" contenteditable="true">Resistance to stress</li>
+                        </div>
+                        <div class="cross_high6">
+                          <i id="cross_high6" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div id="highlight7">
+                        <div class="list_high7">
+                          <li class="editblack" id="high_li7" contenteditable="true">Revenue generation</li>
+                        </div>
+                        <div class="cross_high7">
+                          <i id="cross_high7" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div id="highlight8">
+                        <div class="list_high8">
+                          <li class="editblack" id="high_li8" contenteditable="true">
+                            <input type="text" class="input_box" placeholder="add highlight" />
+                          </li>
+                        </div>
+                        <div class="cross_high8">
+                          <i id="cross_high8" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div id="highlight9">
+                        <div class="list_high9">
+                          <li class="editblack" id="high_li9" contenteditable="true">
+                            <input type="text" class="input_box" placeholder="add highlight" />
+                          </li>
+                        </div>
+                        <div class="cross_high9">
+                          <i id="cross_high9" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </ul>
+                    <h3 class="t3h3">Education</h3>
+                    <div id="education1">
+                      <div class="list_edu1">
+                        <p class="editblack" id="edu_li1" contenteditable="true">
+                          Bachelors of Science:Automotive
+                          <br />
+                          Technology-2019
+                          <br />
+                          Technical Institute, NY
+                        </p>
+                      </div>
+                      <div class="cross_edu1">
+                        <i id="cross_edu1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div id="education2">
+                      <div class="list_edu2">
+                        <p class="editblack" id="edu_li2" contenteditable="true">
+                          Bachelors of Science:Automotive
+                          <br />
+                          Technology-2019
+                          <br />
+                          Technical Institute, NY
+                        </p>
+                      </div>
+                      <div class="cross_edu2">
+                        <i id="cross_edu2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div id="education3">
+                      <div class="list_edu3">
+                        <p class="editblack" id="edu_li3" contenteditable="true">add education</p>
+                      </div>
+
+                      <div class="cross_edu3">
+                        <i id="cross_edu3" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div id="education4">
+                      <div class="list_edu4">
+                        <p class="editblack" id="edu_li4" contenteditable="true">add education</p>
+                      </div>
+                      <div class="cross_edu4">
+                        <i id="cross_edu4" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <h3 class="t3h3">Hobbies</h3>
+                    <ul>
+                      <div id="hobby1">
+                        <div class="list_hobby1">
+                          <li class="editblack" id="hobby_li1" contenteditable="true">Playing Chess-great way to unwind, destress and keep the mind sharp.</li>
+                        </div>
+                        <div class="cross_hobby1">
+                          <i id="cross_hobby1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                      <div id="hobby2">
+                        <div class="list_hobby2">
+                          <li class="editblack" id="hobby_li2" contenteditable="true">Playing Chess-great way to unwind, destress and keep the mind sharp.</li>
+                        </div>
+                        <div class="cross_hobby2">
+                          <i id="cross_hobby2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+
+                      <!-- <div id="hobby2">
+                        <div class="list_hobby2">
+                          <li class="editblack" id="hobby_li2" contenteditable="true">
+                            <input type="text" class="input_box" placeholder="add hobby" />
+                          </li>
+                        </div>
+                        <div class="cross_hobby2">
+                          <i id="cross_hobby2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div> -->
+                      <div id="hobby3">
+                        <div class="list_hobby3">
+                          <li class="editblack" id="hobby_li3" contenteditable="true">
+                            <input type="text" class="input_box" placeholder="add hobby" />
+                          </li>
+                        </div>
+                        <div class="cross_hobby3">
+                          <i id="cross_hobby3" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </page>
+      </div>
+    </div>
+    <!-- <button type="button"class="btnprint" onclick="getprint()">Print</button> -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#add_sec_btn').click(function (event) {
+          event.stopPropagation();
+          $('#Id_mult_sec').toggle(50);
+        });
+
+        $(document).click(function (event) {
+          if (!$(event.target).closest('#Id_mult_sec').length && !$(event.target).is('#add_sec_btn')) {
+            $('#Id_mult_sec').hide(50);
+          }
+        });
+      });
+
+      var exp_date1 = document.getElementById('exp_date1');
+      var exp_date2 = document.getElementById('exp_date2');
+      var exp_position1 = document.getElementById('exp_position1');
+      var exp_position2 = document.getElementById('exp_position2');
+      var exp_address1 = document.getElementById('exp_address1');
+      var exp_address2 = document.getElementById('exp_address2');
+
+      var exp_sec3_li1 = document.getElementById('exp_sec3_li1');
+      var exp_sec3_li2 = document.getElementById('exp_sec3_li2');
+      var exp_sec3_li3 = document.getElementById('exp_sec3_li3');
+      var exp_sec4_li1 = document.getElementById('exp_sec4_li1');
+      var exp_sec4_li2 = document.getElementById('exp_sec4_li2');
+      var exp_sec4_li3 = document.getElementById('exp_sec4_li3');
+
+      exp_date1.addEventListener('click', function () {
+        if (exp_date1.innerHTML !== '') {
+          exp_date1.innerHTML = '';
+          exp_date1.style.color = 'black';
+        }
+      });
+
+      exp_date2.addEventListener('click', function () {
+        if (exp_date2.innerHTML !== '') {
+          exp_date2.innerHTML = '';
+          exp_date2.style.color = 'black';
+        }
+      });
+
+      exp_position1.addEventListener('click', function () {
+        if (exp_position1.innerHTML !== '') {
+          exp_position1.innerHTML = '';
+          exp_position1.style.color = 'black';
+        }
+      });
+
+      exp_position2.addEventListener('click', function () {
+        if (exp_position2.innerHTML !== '') {
+          exp_position2.innerHTML = '';
+          exp_position2.style.color = 'black';
+        }
+      });
+
+      exp_address1.addEventListener('click', function () {
+        if (exp_address1.innerHTML !== '') {
+          exp_address1.innerHTML = '';
+          exp_address1.style.color = 'black';
+        }
+      });
+
+      exp_address2.addEventListener('click', function () {
+        if (exp_address2.innerHTML !== '') {
+          exp_address2.innerHTML = '';
+          exp_address2.style.color = 'black';
+        }
+      });
+
+      exp_sec3_li1.addEventListener('click', function () {
+        if (exp_sec3_li1.innerHTML !== '') {
+          exp_sec3_li1.innerHTML = '';
+          exp_sec3_li1.style.color = 'black';
+        }
+      });
+
+      exp_sec3_li2.addEventListener('click', function () {
+        if (exp_sec3_li2.innerHTML !== '') {
+          exp_sec3_li2.innerHTML = '';
+          exp_sec3_li2.style.color = 'black';
+        }
+      });
+
+      exp_sec3_li3.addEventListener('click', function () {
+        if (exp_sec3_li3.innerHTML !== '') {
+          exp_sec3_li3.innerHTML = '';
+          exp_sec3_li3.style.color = 'black';
+        }
+      });
+
+      exp_sec4_li1.addEventListener('click', function () {
+        if (exp_sec4_li1.innerHTML !== '') {
+          exp_sec4_li1.innerHTML = '';
+          exp_sec4_li1.style.color = 'black';
+        }
+      });
+
+      exp_sec4_li2.addEventListener('click', function () {
+        if (exp_sec4_li2.innerHTML !== '') {
+          exp_sec4_li2.innerHTML = '';
+          exp_sec4_li2.style.color = 'black';
+        }
+      });
+
+      exp_sec4_li3.addEventListener('click', function () {
+        if (exp_sec4_li3.innerHTML !== '') {
+          exp_sec4_li3.innerHTML = '';
+          exp_sec4_li3.style.color = 'black';
+        }
+      });
+
+      var add_exp_btn = document.getElementById('add_experience');
+      var add_high_btn = document.getElementById('add_highlights');
+      var add_edu_btn = document.getElementById('add_education');
+      var add_hobby_btn = document.getElementById('add_hobbies');
+
+      var cross_sec1 = document.getElementById('cross_sec1');
+      var cross_exp1_sec1 = document.getElementById('cross_exp1_sec1');
+      var cross_exp2_sec1 = document.getElementById('cross_exp2_sec1');
+      var cross_exp3_sec1 = document.getElementById('cross_exp3_sec1');
+      var cross_exp4_sec1 = document.getElementById('cross_exp4_sec1');
+      var cross_exp5_sec1 = document.getElementById('cross_exp5_sec1');
+      var cross_sec2 = document.getElementById('cross_sec2');
+      var cross_exp1_sec2 = document.getElementById('cross_exp1_sec2');
+      var cross_exp2_sec2 = document.getElementById('cross_exp2_sec2');
+      var cross_exp3_sec2 = document.getElementById('cross_exp3_sec2');
+      var cross_exp4_sec2 = document.getElementById('cross_exp4_sec2');
+      var cross_sec3 = document.getElementById('cross_sec3');
+      var cross_sec4 = document.getElementById('cross_sec4');
+
+      var cross_high1 = document.getElementById('cross_high1');
+      var cross_high2 = document.getElementById('cross_high2');
+      var cross_high3 = document.getElementById('cross_high3');
+      var cross_high4 = document.getElementById('cross_high4');
+      var cross_high5 = document.getElementById('cross_high5');
+      var cross_high6 = document.getElementById('cross_high6');
+      var cross_high7 = document.getElementById('cross_high7');
+      var cross_high8 = document.getElementById('cross_high8');
+      var cross_high9 = document.getElementById('cross_high9');
+
+      var cross_edu1 = document.getElementById('cross_edu1');
+      var cross_edu2 = document.getElementById('cross_edu2');
+      var cross_edu3 = document.getElementById('cross_edu3');
+      var cross_edu4 = document.getElementById('cross_edu4');
+
+      var cross_hobby1 = document.getElementById('cross_hobby1');
+      var cross_hobby2 = document.getElementById('cross_hobby2');
+      var cross_hobby3 = document.getElementById('cross_hobby3');
+
+      cross_sec1.addEventListener('click', function () {
+        experience_sec1.remove();
+      });
+      experience_sec1.addEventListener('mouseleave', function () {
+        cross_sec1.style.display = 'none';
+      });
+      experience_sec1.addEventListener('mouseover', function () {
+        cross_sec1.style.display = 'block';
+      });
+      cross_exp1_sec1.addEventListener('click', function () {
+        experience1_sec1.remove();
+      });
+      experience1_sec1.addEventListener('mouseleave', function () {
+        cross_exp1_sec1.style.display = 'none';
+      });
+      experience1_sec1.addEventListener('mouseover', function () {
+        cross_exp1_sec1.style.display = 'block';
+      });
+      cross_exp2_sec1.addEventListener('click', function () {
+        experience2_sec1.remove();
+      });
+      experience2_sec1.addEventListener('mouseleave', function () {
+        cross_exp2_sec1.style.display = 'none';
+      });
+      experience2_sec1.addEventListener('mouseover', function () {
+        cross_exp2_sec1.style.display = 'block';
+      });
+      cross_exp3_sec1.addEventListener('click', function () {
+        experience3_sec1.remove();
+      });
+      experience3_sec1.addEventListener('mouseleave', function () {
+        cross_exp3_sec1.style.display = 'none';
+      });
+      experience3_sec1.addEventListener('mouseover', function () {
+        cross_exp3_sec1.style.display = 'block';
+      });
+      cross_exp4_sec1.addEventListener('click', function () {
+        experience4_sec1.remove();
+      });
+      experience4_sec1.addEventListener('mouseleave', function () {
+        cross_exp4_sec1.style.display = 'none';
+      });
+      experience4_sec1.addEventListener('mouseover', function () {
+        cross_exp4_sec1.style.display = 'block';
+      });
+      cross_exp5_sec1.addEventListener('click', function () {
+        experience5_sec1.remove();
+      });
+      experience5_sec1.addEventListener('mouseleave', function () {
+        cross_exp5_sec1.style.display = 'none';
+      });
+      experience5_sec1.addEventListener('mouseover', function () {
+        cross_exp5_sec1.style.display = 'block';
+      });
+      cross_sec2.addEventListener('click', function () {
+        experience_sec2.remove();
+      });
+      experience_sec2.addEventListener('mouseleave', function () {
+        cross_sec2.style.display = 'none';
+      });
+      experience_sec2.addEventListener('mouseover', function () {
+        cross_sec2.style.display = 'block';
+      });
+      cross_exp1_sec2.addEventListener('click', function () {
+        experience1_sec2.remove();
+      });
+      experience1_sec2.addEventListener('mouseleave', function () {
+        cross_exp1_sec2.style.display = 'none';
+      });
+      experience1_sec2.addEventListener('mouseover', function () {
+        cross_exp1_sec2.style.display = 'block';
+      });
+      cross_exp2_sec2.addEventListener('click', function () {
+        experience2_sec2.remove();
+      });
+      experience2_sec2.addEventListener('mouseleave', function () {
+        cross_exp2_sec2.style.display = 'none';
+      });
+      experience2_sec2.addEventListener('mouseover', function () {
+        cross_exp2_sec2.style.display = 'block';
+      });
+      cross_exp3_sec2.addEventListener('click', function () {
+        experience3_sec2.remove();
+      });
+      experience3_sec2.addEventListener('mouseleave', function () {
+        cross_exp3_sec2.style.display = 'none';
+      });
+      experience3_sec2.addEventListener('mouseover', function () {
+        cross_exp3_sec2.style.display = 'block';
+      });
+      cross_exp4_sec2.addEventListener('click', function () {
+        experience4_sec2.remove();
+      });
+      experience4_sec2.addEventListener('mouseleave', function () {
+        cross_exp4_sec2.style.display = 'none';
+      });
+      experience4_sec2.addEventListener('mouseover', function () {
+        cross_exp4_sec2.style.display = 'block';
+      });
+      cross_sec3.addEventListener('click', function () {
+        experience_sec3.remove();
+      });
+      experience_sec3.addEventListener('mouseleave', function () {
+        cross_sec3.style.display = 'none';
+      });
+      experience_sec3.addEventListener('mouseover', function () {
+        cross_sec3.style.display = 'block';
+      });
+      cross_sec4.addEventListener('click', function () {
+        experience_sec4.remove();
+      });
+      experience_sec4.addEventListener('mouseleave', function () {
+        cross_sec4.style.display = 'none';
+      });
+      experience_sec4.addEventListener('mouseover', function () {
+        cross_sec4.style.display = 'block';
+      });
+
+      cross_high1.addEventListener('click', function () {
+        highlight1.remove();
+      });
+      highlight1.addEventListener('mouseleave', function () {
+        cross_high1.style.display = 'none';
+      });
+      highlight1.addEventListener('mouseover', function () {
+        cross_high1.style.display = 'block';
+      });
+      cross_high2.addEventListener('click', function () {
+        highlight2.remove();
+      });
+      highlight2.addEventListener('mouseleave', function () {
+        cross_high2.style.display = 'none';
+      });
+      highlight2.addEventListener('mouseover', function () {
+        cross_high2.style.display = 'block';
+      });
+      cross_high3.addEventListener('click', function () {
+        highlight3.remove();
+      });
+      highlight3.addEventListener('mouseleave', function () {
+        cross_high3.style.display = 'none';
+      });
+      highlight3.addEventListener('mouseover', function () {
+        cross_high3.style.display = 'block';
+      });
+      cross_high4.addEventListener('click', function () {
+        highlight4.remove();
+      });
+      highlight4.addEventListener('mouseleave', function () {
+        cross_high4.style.display = 'none';
+      });
+      highlight4.addEventListener('mouseover', function () {
+        cross_high4.style.display = 'block';
+      });
+      cross_high5.addEventListener('click', function () {
+        highlight5.remove();
+      });
+      highlight5.addEventListener('mouseleave', function () {
+        cross_high5.style.display = 'none';
+      });
+      highlight5.addEventListener('mouseover', function () {
+        cross_high5.style.display = 'block';
+      });
+      cross_high6.addEventListener('click', function () {
+        highlight6.remove();
+      });
+      highlight6.addEventListener('mouseleave', function () {
+        cross_high6.style.display = 'none';
+      });
+      highlight6.addEventListener('mouseover', function () {
+        cross_high6.style.display = 'block';
+      });
+      cross_high7.addEventListener('click', function () {
+        highlight7.remove();
+      });
+      highlight7.addEventListener('mouseleave', function () {
+        cross_high7.style.display = 'none';
+      });
+      highlight7.addEventListener('mouseover', function () {
+        cross_high7.style.display = 'block';
+      });
+      cross_high8.addEventListener('click', function () {
+        highlight8.remove();
+      });
+      highlight8.addEventListener('mouseleave', function () {
+        cross_high8.style.display = 'none';
+      });
+      highlight8.addEventListener('mouseover', function () {
+        cross_high8.style.display = 'block';
+      });
+      cross_high9.addEventListener('click', function () {
+        highlight9.remove();
+      });
+      highlight9.addEventListener('mouseleave', function () {
+        cross_high9.style.display = 'none';
+      });
+      highlight9.addEventListener('mouseover', function () {
+        cross_high9.style.display = 'block';
+      });
+
+      cross_edu1.addEventListener('click', function () {
+        education1.remove();
+      });
+      education1.addEventListener('mouseleave', function () {
+        cross_edu1.style.display = 'none';
+      });
+      education1.addEventListener('mouseover', function () {
+        cross_edu1.style.display = 'block';
+      });
+      cross_edu2.addEventListener('click', function () {
+        education2.remove();
+      });
+      education2.addEventListener('mouseleave', function () {
+        cross_edu2.style.display = 'none';
+      });
+      education2.addEventListener('mouseover', function () {
+        cross_edu2.style.display = 'block';
+      });
+      cross_edu3.addEventListener('click', function () {
+        education3.remove();
+      });
+      education3.addEventListener('mouseleave', function () {
+        cross_edu3.style.display = 'none';
+      });
+      education3.addEventListener('mouseover', function () {
+        cross_edu3.style.display = 'block';
+      });
+      cross_edu4.addEventListener('click', function () {
+        education4.remove();
+      });
+      education4.addEventListener('mouseleave', function () {
+        cross_edu4.style.display = 'none';
+      });
+      education4.addEventListener('mouseover', function () {
+        cross_edu4.style.display = 'block';
+      });
+
+      cross_hobby1.addEventListener('click', function () {
+        hobby1.remove();
+      });
+      hobby1.addEventListener('mouseleave', function () {
+        cross_hobby1.style.display = 'none';
+      });
+      hobby1.addEventListener('mouseover', function () {
+        cross_hobby1.style.display = 'block';
+      });
+      cross_hobby2.addEventListener('click', function () {
+        hobby2.remove();
+      });
+      hobby2.addEventListener('mouseleave', function () {
+        cross_hobby2.style.display = 'none';
+      });
+      hobby2.addEventListener('mouseover', function () {
+        cross_hobby2.style.display = 'block';
+      });
+      cross_hobby3.addEventListener('click', function () {
+        hobby3.remove();
+      });
+      hobby3.addEventListener('mouseleave', function () {
+        cross_hobby3.style.display = 'none';
+      });
+      hobby3.addEventListener('mouseover', function () {
+        cross_hobby3.style.display = 'block';
+      });
+
+      add_exp_btn.addEventListener('click', function () {
+        if (experience_sec3.style.display !== 'block') {
+          experience_sec3.style.display = 'block';
+        } else {
+          experience_sec4.style.display = 'block';
+        }
+      });
+      add_high_btn.addEventListener('click', function () {
+        if (highlight8.style.display !== 'block') {
+          highlight8.style.display = 'block';
+        } else {
+          highlight9.style.display = 'block';
+        }
+      });
+      add_edu_btn.addEventListener('click', function () {
+        if (education3.style.display !== 'block') {
+          education3.style.display = 'block';
+        } else {
+          education4.style.display = 'block';
+        }
+      });
+      add_hobby_btn.addEventListener('click', function () {
+        if (hobby2.style.display !== 'block') {
+          hobby2.style.display = 'block';
+        } else {
+          hobby3.style.display = 'block';
+        }
+      });
+
+      // Print CV
+      //  function getprint() {
+      //         window.print()
+      //     }
+      // Upload Profile
+      var ID_img = document.getElementById('ID_img');
+      var img_input = document.getElementById('img_input');
+
+      function uploadimg() {
+        ID_img.src = URL.createObjectURL(img_input.files[0]);
+      }
+      // Download Button
+      document.getElementById('download_btn').addEventListener('click', function () {
+        const container = document.getElementById('cv');
+
+        // Use html2canvas to render the container as an image on a canvas
+        html2canvas(container).then(function (canvas) {
+          // Convert the canvas to a data URL representing the PNG image
+          const dataURL = canvas.toDataURL('image/png');
+
+          // Create a temporary anchor element to trigger the download
+          const downloadLink = document.createElement('a');
+          downloadLink.href = dataURL;
+          downloadLink.download = 'cv.png'; // Set the desired file name and extension
+
+          // Append the anchor element to the document and click it programmatically
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+
+          // Clean up: remove the temporary anchor
+          document.body.removeChild(downloadLink);
+        });
+      });
+    </script>
+  </body>
+</html>

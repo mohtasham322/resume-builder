@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="bootstrap/css/index.css">
+    <title>resume-builder</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .scrollspy-example {
+            position: relative;
+            height: 80vh;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="dashboard">
+            <div class="logo">
+                <h2>CV BUILDER</h2>
+            </div>
+            <h4>Menu</h4>
+            <p>let you know how to write:</p>
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action " href="#ResumeTemp">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#ID_ResumeSumary">Item 2</a>
+                <a class="list-group-item list-group-item-action" href="#ID_ResumeObj">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#ID_ResumeExp">Item 4</a>
+                <a class="list-group-item list-group-item-action" href="#ID_Resumeskill">Item 5</a>
+
+            </div>
+        </div>
+        <div class="main_content ">
+            <div class="header">
+                <button type="button" class="signup_btn">sign up</button>
+                <button type="button" class="login_btn">login</button>
+            </div>
+            <div class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0"
+                tabindex="0">
+                <div class="banner">
+                    <h2>Get Your Professional CV in Minutes</h2>
+                    <p>Build your perfect CV with our user friendly CV builder. Impress employers with a professionally
+                        designed resume that highlight your skills and skillerience. Get started today and land your
+                        dream
+                        job!</p>
+                    <button type="button" class="get_start">Get Started</button>
+                </div>
+                <div>
+
+                    <div class="cv_templates container" id="ResumeTemp">
+                        <div class="row row_custom">
+                            <h3>Resume Templates</h3>
+                            <hr>
+                            <div class="col-lg-4 col-md-5 col-sm-10 col-xm-10">
+                                <img class="w-100" src="/cv template examples/cv template 1.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-sm-10 col-xm-10">
+                                <img class="w-100" src="/cv template examples/cv template 2.jpg" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-sm-10 col-xm-10">
+                                <img class="w-100" src="/cv template examples/cv template 3.jpg" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-sm-10 col-xm-10">
+                                <img class="w-100" src="/cv template examples/cv template 4.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-sm-10 col-xm-10">
+                                <img class="w-100" src="/cv template examples/cv template 5.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-sm-10 col-xm-10">
+                                <img class="w-100" src="cv template examples/cv template 6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="summary_examples" id="ID_ResumeSumary">
+                        <div class="summary_method">
+                            <h3>How to Write Summary in CV</h3>
+                            <P>While writing a CV summary, condense your qualifications, skills, and goals into a
+                                succinct
+                                statement. Highlight your key achievements and skillerience, emphasizing your unique
+                                value.
+                                Use
+                                action
+                                words and specific examples to showcase your abilities. Craft a clear and impactful
+                                summary
+                                that
+                                grabs the attention of employers, enticing them to delve further into your CV.</P>
+                        </div>
+                        <h3>Resume Summary Examples</h3>
+                        <hr>
+                        <h4>Lab Technician</h4>
+                        <div class="each_summary_example">
+
+                            <p id="summary_labtech">Highly skilled lab technician with 3 years of laboratory
+                                skillerience. Proficient in conducting tests, analyzing samples, and ensuring accuracy.
+                                Strong
+                                knowledge of lab procedures, safety protocols, and equipment. Detail-oriented and
+                                committed
+                                to
+                                maintaining high-quality standards. Effective team player with excellent communication
+                                and
+                                organizational skills.</p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('sum_lb')"></i></div>
+
+
+                        </div>
+                        <h4>Software Engineer</h4>
+                        <div class="each_summary_example">
+                            <p id="summary_se">skillerienced software engineer with 3 years of skillertise in the IT
+                                industry.
+                                Proficient in
+                                full-stack development, software design, and coding. Skilled in various programming
+                                languages
+                                and frameworks. Demonstrated ability to deliver high-quality solutions and collaborate
+                                effectively in agile teams. Strong problem-solving and analytical skills, with a passion
+                                for
+                                innovation and continuous learning.</p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('sum_se')"></i></div>
+                        </div>
+                        <h4>Graphic Designer</h4>
+                        <div class="each_summary_example">
+                            <p id="summary_gd">Creative and skillerienced graphic designer with a solid track record of
+                                6
+                                years
+                                in
+                                the IT
+                                industry. Proficient in conceptualizing and executing visually appealing designs for
+                                digital
+                                and
+                                print media. Strong skillertise in Adobe Creative Suite and UI/UX design. Collaborative
+                                team
+                                player with a keen eye for detail and a passion for delivering impactful visual
+                                solutions.
+                            </p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('sum_gd')"></i></div>
+                        </div>
+                        <h4>UI & UX Designer</h4>
+                        <div class="each_summary_example">
+                            <p id="summary_uiuxd">Passionate and talented UI/UX designer with a strong foundation in
+                                design
+                                principles. Recently
+                                graduated with a focus on user-centered design and digital skilleriences. Proficient in
+                                Adobe
+                                Creative Suite and wireframing tools. Strong problem-solving skills and a drive for
+                                creating
+                                intuitive and visually captivating user interfaces. Eager to contribute to innovative
+                                design
+                                projects and learn from skillerienced professionals.</p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('sum_uiuxd')"></i></div>
+                        </div>
+                        <h4>Sales Representative</h4>
+                        <div class="each_summary_example">
+                            <p id="summary_sr">Results-driven sales representative with 2 years of skillerience in
+                                achieving
+                                sales
+                                targets and
+                                building client relationships. Proven track record of exceeding skillectations in B2B
+                                and
+                                B2C
+                                sales environments. Strong communication and negotiation skills, with a customer-centric
+                                approach. Motivated, proactive, and adaptable team player, committed to delivering
+                                exceptional
+                                sales performance.</p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('sum_sr')"></i></div>
+                        </div>
+                        <h4>Civil Engineer</h4>
+                        <div class="each_summary_example">
+                            <p id="summary_ce">skillerienced civil engineer with one year of practical industry
+                                skillerience.
+                                Proficient in managing
+                                construction projects, conducting site inspections, and ensuring adherence to safety
+                                regulations. Skilled in utilizing engineering software and collaborating with
+                                multidisciplinary
+                                teams. Committed to delivering high-quality results within budget and timeline
+                                constraints.
+                                Strong analytical and problem-solving abilities.</p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('sum_ce')"></i></div>
+                        </div>
+                        <br>
+                        <hr>
+
+                    </div>
+
+                    <div class="obj_examples" id="ID_ResumeObj">
+                        <div class="objective_method">
+                            <h3>How to Write Objective in CV</h3>
+                            <p>When writing a CV objective in 60 words, clearly state your career goals and intentions.
+                                Focus on
+                                the specific role or industry you are targeting. Highlight your skills, qualifications,
+                                and
+                                skillerience relevant to the desired position. Keep it concise, specific, and tailored
+                                to
+                                the
+                                job
+                                you're applying for. The objective should convey your enthusiasm and commitment to
+                                contribute to
+                                the employer's success while aligning with your professional aspirations.</p>
+                        </div>
+                        <h3>Objective Examples</h3>
+                        <hr>
+                        <h4>Lab Technician</h4>
+                        <div class="each_objective_example">
+
+                            <p id="obj_labtech">Highly skilled and detail-oriented Lab Technician seeking a position in
+                                a
+                                reputable laboratory. Offering skillertise in conducting tests, analyzing samples, and
+                                maintaining accurate records. Committed to ensuring quality control, adhering to safety
+                                protocols, and contributing to scientific advancements. Dedicated to providing reliable
+                                and
+                                precise laboratory support to enhance research and diagnostic processes.</p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('obj_lb')"></i></div>
+
+
+                        </div>
+                        <h4>Software Engineer</h4>
+                        <div class="each_objective_example">
+                            <p id="obj_se">Results-driven Software Engineer with a passion for innovation and
+                                problem-solving.
+                                Seeking a challenging role to leverage my skillertise in designing and developing robust
+                                software solutions. Committed to delivering high-quality code, collaborating effectively
+                                in
+                                teams, and staying up-to-date with emerging technologies. Dedicated to delivering
+                                impactful
+                                software solutions that drive efficiency and enhance user skilleriences.</p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('obj_se')"></i></div>
+                        </div>
+                        <h4>Graphic Designer</h4>
+                        <div class="each_objective_example">
+                            <p id="obj_gd">Creative and detail-oriented Graphic Designer seeking a position to utilize
+                                my
+                                artistic skills and passion for visual communication. Dedicated to producing visually
+                                compelling
+                                designs and illustrations that effectively convey messages. Proficient in Adobe Creative
+                                Suite
+                                and skillerienced in print and digital design. Committed to delivering innovative and
+                                impactful
+                                design solutions that exceed client skillectations.</p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('obj_gd')"></i></div>
+                        </div>
+                        <h4>UI & UX Designer</h4>
+                        <div class="each_objective_example">
+                            <p id="obj_uiuxd">Goal-driven UI/UX Designer with a strong understanding of user-centered
+                                design
+                                principles. Seeking a position to apply my skillertise in creating intuitive and
+                                visually
+                                appealing digital skilleriences. Passionate about crafting seamless user interfaces,
+                                conducting
+                                user research, and implementing data-driven design solutions. Committed to delivering
+                                user-centric designs that optimize usability and enhance overall user satisfaction.</p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('obj_uiuxd')"></i></div>
+                        </div>
+                        <h4>Sales Representative</h4>
+                        <div class="each_objective_example">
+                            <p id="obj_sr">Dynamic and results-oriented Sales Representative with a proven track record
+                                in
+                                driving revenue growth and building strong client relationships. Seeking a challenging
+                                role
+                                to
+                                utilize my persuasive skills and industry knowledge. Committed to exceeding sales
+                                targets,
+                                providing exceptional customer service, and identifying opportunities to maximize market
+                                penetration. Eager to contribute to a high-performing sales team and drive business
+                                success.
+                            </p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('obj_sr')"></i></div>
+                        </div>
+                        <h4>Civil Engineer</h4>
+                        <div class="each_objective_example">
+                            <p id="obj_ce">Motivated and detail-oriented Civil Engineer seeking a position to apply my
+                                skillertise in designing, planning, and overseeing construction projects. Committed to
+                                delivering high-quality infrastructure solutions that meet safety standards and client
+                                requirements. Skilled in project management, structural analysis, and utilizing CAD
+                                software.
+                                Dedicated to ensuring efficient project execution and contributing to the advancement of
+                                civil
+                                engineering practices.</p>
+                            <div class="copy_icon"><i class="fa fa-clipboard " id="id_copy" aria-hidden="true"
+                                    title="copy" onclick="copybtn('obj_ce')"></i></div>
+                        </div>
+                        <br>
+                        <hr>
+
+                    </div>
+                    <div class="exp_examples" id="ID_ResumeExp">
+                        <div class="exp_method">
+                            <h3>How to List Down Experience in CV</h3>
+                            <p>When listing your experience in your CV, it's important to present it in a clear and
+                                concise
+                                manner to highlight your professional background effectively. Here's how to structure
+                                your
+                                experience section:</p>
+                            <ol>
+                                <li>Start with your most recent experience</li>
+                                <li>Include the relevant details</li>
+                                <li>Highlight your responsibilities</li>
+                                <li>Showcase your achievements</li>
+                            </ol>
+                        </div>
+                        <h3>Experience Examples</h3>
+                        <hr>
+                        <div class="container-fluid">
+                            <div class="row exp_row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 each_exp_example">
+                                    <h5>Project Manager at XYZ Construction Company, New York City, NY</h5>
+                                    <ul>
+                                        <li>Successfully managed a portfolio of commercial construction projects worth
+                                            over
+                                            $10 million, ensuring on-time delivery and within budget.</li>
+                                        <li>Led cross-functional teams, coordinated subcontractors, and implemented
+                                            project
+                                            schedules to achieve project milestones.</li>
+                                        <li>Improved project efficiency by implementing streamlined processes, resulting
+                                            in
+                                            a 15% reduction in project timelines.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 each_exp_example">
+                                    <h5>Marketing Specialist at ABC Tech, San Francisco, CA</h5>
+                                    <ul>
+                                        <li>Developed and executed digital marketing campaigns, resulting in a 30%
+                                            increase
+                                            in website traffic and a 20% growth in lead generation.</li>
+                                        <li>Managed social media accounts, increasing followers by 50% and engagement by
+                                            75%.</li>
+                                        <li>Conducted market research and competitor analysis to identify emerging
+                                            trends
+                                            and recommend strategic marketing initiatives.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 each_exp_example">
+                                    <h5>Research Assistant at University of XYZ, Department of Engineering, City, State
+                                    </h5>
+                                    <ul>
+                                        <li>Assisted in conducting research projects, collecting and analyzing data, and
+                                            preparing reports for publication.</li>
+                                        <li>Collaborated with a team of researchers to design experiments, troubleshoot
+                                            technical issues, and ensure data integrity.</li>
+                                        <li>Presented research findings at conferences and contributed to published
+                                            articles
+                                            in peer-reviewed journals.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+
+                    </div>
+                    <div class="skill_examples" id="ID_Resumeskill">
+                        <div class="skill_method">
+                            <h3>How to List Down Skills in CV</h3>
+                            <p>When writing a skills list in your CV, it's essential to include relevant skills that
+                                showcase
+                                your qualifications and suitability for the desired position. Here's how to present your
+                                skills
+                                effectively:</p>
+                            <ol>
+                                <li>Identify key skills: Review the job description and identify the skills that are
+                                    specifically mentioned or required for the role.</li>
+                                <li>Tailor to the position: Select skills that align with the job requirements and the
+                                    industry
+                                    you're targeting. Focus on both technical and transferable skills.</li>
+                                <li>Be specific: Instead of using generic terms, provide specific examples of how you
+                                    have
+                                    applied those skills in previous roles or projects.</li>
+                                <li>Group similar skills: Group related skills under subheadings such as technical
+                                    skills,
+                                    soft
+                                    skills, or industry-specific skills.</li>
+                            </ol>
+                        </div>
+                        <h3>Skills Examples</h3>
+                        <hr>
+                        <div class="container-fluid">
+                            <div class="row skills_row">
+                                <div class="col-lg-3 col-md-5 col-sm-10 col-xm-10 each_skills_example">
+                                    <h5>Technical Skills:</h5>
+                                    <ul>
+                                        <li>Programming languages (e.g., Python, Java)</li>
+                                        <li>CAD software proficiency (e.g., AutoCAD, Revit)</li>
+                                        <li>Structural analysis and design</li>
+                                        <li>Project management</li>
+                                        <li>Site surveying and measurements</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-5 col-sm-10 col-xm-10 each_skills_example">
+                                    <h5>Soft Skills:</h5>
+                                    <ul>
+                                        <li>Communication and interpersonal skills</li>
+                                        <li>Problem-solving and analytical thinking</li>
+                                        <li>Teamwork and collaboration</li>
+                                        <li>Adaptability and flexibility</li>
+                                        <li>Time management and organizational skills</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-5 col-sm-10 col-xm-10 each_skills_example">
+                                    <h5>Industry-Specific Skills:</h5>
+                                    <ul>
+                                        <li>Knowledge of building codes and regulations</li>
+                                        <li>Construction project planning and scheduling</li>
+                                        <li>Cost estimation and budgeting</li>
+                                        <li>Risk assessment and mitigation</li>
+                                        <li>Quality control and assurance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-spy="scroll"]').each(function () {
+                var $spy = $(this).scrollspy('refresh')
+            });
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/366a194d84.js" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/index.js"></script>
+
+
+
+</body>
+
+</html>

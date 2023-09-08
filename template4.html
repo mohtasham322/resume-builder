@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/template4.css" />
+    <link rel="stylesheet" href="bootstrap/css/index.css" />
+    <title>cv template</title>
+  </head>
+
+  <body>
+    <div class="dashboard dashboard_cv">
+      <a href="index.html" target="_blank">
+      <div class="logo">
+        <!-- <h2>CV BUILDER</h2> -->
+        <img class="logo" src="images/logo.png" alt="logo" />
+      </div></a>
+      <ul>
+        <div class="each_menu">
+          <i class="fa fa-shirtsinbulk" aria-hidden="true"></i>
+          <a href="/#ID_ResumeSumary" target="_blank">
+            <li>Resume summary</li>
+          </a>
+        </div>
+        <div class="each_menu">
+          <i class="fa fa-building" aria-hidden="true"></i>.
+          <a href="/#ID_ResumeObj" target="_blank">
+            <li>objective</li>
+          </a>
+        </div>
+        <div class="each_menu">
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+          <a href="/#ID_ResumeExp" target="_blank">
+            <li>work experience</li>
+          </a>
+        </div>
+        <div class="each_menu">
+          <i class="fa fa-desktop" aria-hidden="true"></i>
+          <a href="/#ID_Resumeskill" target="_blank">
+            <li>skills list</li>
+          </a>
+        </div>
+        <div class="each_menu">
+          <i class="fa fa-book" aria-hidden="true"></i>
+          <a href="C:\Users\hp\Desktop\aptech-vission\index.html#ID_Resumeedu" target="_blank">
+            <li>education list</li>
+          </a>
+        </div>
+
+        <div class="add_sect_div">
+          <div class="add_sect_main_btn" id="add_sec_btn">
+            <button type="button" class="add_section_btn">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+              add section
+              <i class="fa fa-angle-right" style="font-size: 24px"></i>
+            </button>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <div class="mult_sects" id="Id_mult_sec">
+      <ul class="mult_sects_ul">
+        <li class="add_btn" id="add_skill">
+          <i class="fa fa-plus-circle"></i>
+          add skills
+        </li>
+        <li class="add_btn" id="add_honour">
+          <i class="fa fa-plus-circle"></i>
+          add honour/awards
+        </li>
+        <li class="add_btn" id="add_certificate">
+          <i class="fa fa-plus-circle"></i>
+          add certifications
+        </li>
+        <li class="add_btn" id="add_education">
+          <i class="fa fa-plus-circle"></i>
+          add education
+        </li>
+        <li class="add_btn" id="add_exp">
+          <i class="fa fa-plus-circle"></i>
+          add experience
+        </li>
+      </ul>
+    </div>
+    <div class="main_cont_cv">
+      <div class="header_cv">
+        <button type="button" id="download_btn">
+          Download
+          <i class="fa fa-download"></i>
+        </button>
+      </div>
+      <div class="cv_div">
+        <page size="A4" id="cv">
+          <div id="content_div" class="ContainerCv cl_positionrelative">
+            <div class="profile">
+              <div class="edit" id="profile-text">
+                <h2 class="edit" contenteditable="true">Aiman Tabassum</h2>
+                <h5 class="edit" contenteditable="true">Frontend Developer</h5>
+              </div>
+              <div id="profile-img">
+                <img id="profile-photo" src="images/t1_img.jpg" alt="" />
+                <input id="img_hover" type="file" onclick="addphoto()" />
+                <label id="add_img" for="img_hover">add Image</label>
+              </div>
+            </div>
+            <div class="" id="left-side">
+              <div id="left_hand_information">
+                <div id="contact_info">
+                  <div class="each_contact">
+                    <div class="contact_icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="contact_url">
+                      <span class="edit" contenteditable="true">+923161267933</span>
+                    </div>
+                  </div>
+
+                  <div class="each_contact">
+                    <div class="contact_icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="contact_url">
+                      <a class="edit" href="" contenteditable="true">mmohtasham322@gmail.com</a>
+                    </div>
+                  </div>
+                  <div class="each_contact" id="website">
+                    <div class="contact_icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                    <div class="contact_url" id="website_cross">
+                      <a class="edit" href="" contenteditable="true">https://Mohtasham-Info.me</a>
+                      <i id="cross_btn_web" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="each_contact">
+                    <div class="contact_icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="contact_url">
+                      <span><span class="edit" contenteditable="true">Karachi, Pakistan</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div id="skills">
+                  <h4 class="each_section_heading" contenteditable="true">skills</h4>
+                  <ul id="skills_list">
+                    <div class="edit" id="skills_div">
+                      <div class="each_skills" id="comp_skill_div">
+                        <li class="edit" id="comp_skill" contenteditable="true">computer</li>
+                        <p class="edit" id="sub_comp_skill" contenteditable="true">word, excel, powerpoint</p>
+                      </div>
+                      <div class="cross_btn_div">
+                        <i id="cross_btn_comp_skill" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="edit" id="skills_div_2">
+                      <div class="each_skills" id="lang_skill_div">
+                        <li class="edit" id="skill_field_2" contenteditable="true">languages</li>
+                        <p class="edit" id="sub_skill_field_2" contenteditable="true">english, urdu, turkish, french</p>
+                      </div>
+                      <div class="cross_btn_div">
+                        <i id="cross_btn_lang_skill" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="edit" id="skills_div_3">
+                      <div class="each_skills" id="other_skill_div_1">
+                        <li class="edit" id="skill_field_3"><input type="text" class="added_skills" placeholder="add title" /></li>
+                        <p class="edit" id="sub_skill_field_3" contenteditable="true"><input type="text" class="added_skills" placeholder="add skills" /></p>
+                      </div>
+                      <div class="cross_btn_div">
+                        <i id="cross_btn_other_skill1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="edit" id="skills_div_4">
+                      <div class="each_skills" id="other_skill_div_2">
+                        <li class="edit" id="skill_field_4"><input type="text" class="added_skills" placeholder="add title" /></li>
+                        <p class="edit" id="sub_skill_field_4" contenteditable="true"><input type="text" class="added_skills" placeholder="add skills" /></p>
+                      </div>
+                      <div class="cross_btn_div">
+                        <i id="cross_btn_other_skill2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+                <div class="edit" id="honour_awards">
+                  <div class="honour_awards_cross">
+                    <h4 class="each_section_heading edit" contenteditable="true">honour and awards</h4>
+                    <i id="cross_btn_honour_skill" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                  </div>
+                  <ul id="honour_list">
+                    <div class="edit" id="honour1">
+                      <div id="honour1_cross">
+                        <li class="edit" id="honour_year_1" contenteditable="true">2013</li>
+                        <i id="cross_btn_honour1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                      <p class="edit" id="honour_description_1" contenteditable="true">got top position in last semester</p>
+                    </div>
+                    <div class="edit" id="honour2">
+                      <div id="honour2_cross">
+                        <li class="edit" id=" honour_year_2" contenteditable="true">2012</li>
+                        <i id="cross_btn_honour2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                      <p class="edit" id="honour_description_2" contenteditable="true">attained 50% scholarship due to nice performance</p>
+                    </div>
+                    <div class="edit" id="honour3">
+                      <div id="honour3_cross">
+                        <li class="edit" id=" honour_year_3" contenteditable="true">
+                          <input type="text" class="added_skills" placeholder="year" />
+                        </li>
+                        <i id="cross_btn_honour3" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                      <p class="edit" id="honour_description_3" contenteditable="true">
+                        <input type="text" class="added_skills" placeholder="honour/award" />
+                      </p>
+                    </div>
+                    <div class="edit" id="honour4">
+                      <div id="honour4_cross">
+                        <li class="edit" id=" honour_year_4" contenteditable="true">
+                          <input type="text" class="added_skills" placeholder="year" />
+                        </li>
+                        <i id="cross_btn_honour4" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                      <p class="edit" id="honour_description_4" contenteditable="true">
+                        <input type="text" class="added_skills" placeholder="honour/award" />
+                      </p>
+                    </div>
+                  </ul>
+                </div>
+                <div class="edit" id="certifications">
+                  <div class="certifications_cross">
+                    <h4 class="each_section_heading edit" contenteditable="true">certifications</h4>
+                    <i id="cross_btn_certifications" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                  </div>
+                  <ul id="certificate_list">
+                    <div class="edit" id="certificate1">
+                      <div id="cross_btn_certificate1">
+                        <li class="edit" id="certificate_1" contenteditable="true">2010</li>
+                        <i id="cross_btn_cert1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                      <p class="edit" id="certificate_description_1" contenteditable="true">certificate of student of the year by aptech computer education</p>
+                    </div>
+                    <div class="edit" id="certificate2">
+                      <div id="cross_btn_certificate2">
+                        <li class="edit" id="certificate_2" contenteditable="true">add year</li>
+                        <i id="cross_btn_cert2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                      <p class="edit" id="certificate_description_2" contenteditable="true">add certificate</p>
+                    </div>
+                    <div class="edit" id="certificate3">
+                      <div id="cross_btn_certificate3">
+                        <li class="edit" id="certificate_3" contenteditable="true">add year</li>
+                        <i id="cross_btn_cert3" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                      </div>
+                      <p class="edit" id="certificate_description_3" contenteditable="true">add certificate</p>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class=" " id="right-side">
+              <div id="right_hand_information">
+                <h2>Objective</h2>
+                <p class="editblack" contenteditable="true">Lorem ipsum dolorsit amet consectetur adipisicing elit. Magni qui iure aliquam iusto, excepturi dolor repellat perspiciatis explicabo beatae, sint unde, ratione architecto labore exercitationem nostrum voluptatibus vitae enim sit adipisci velit aperiam? Eius odio eum fugiat officia eaque dolorum deserunt amet. Quam quibusdam error quisquam! Eveniet illum quos incidunt!</p>
+                <hr />
+                <h2>education</h2>
+                <ul id="education_ul">
+                  <div class="editblack" id="education_1">
+                    <div class="education_cross">
+                      <li class="editblack" id="education_li_1" contenteditable="true">university of karachi</li>
+                      <i id="cross_btn_edu1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="education_detail_1">
+                      <p class="editblack" id="education_description_1" contenteditable="true">masters in software engineering</p>
+                      <span class="editblack" id="education_year_1" contenteditable="true">2022</span>
+                    </div>
+                  </div>
+                  <div class="editblack" id="education_2">
+                    <div class="education_cross">
+                      <li class="editblack" id="education_li_2" contenteditable="true">university of karachi</li>
+                      <i id="cross_btn_edu2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="education_detail_2">
+                      <p class="editblack" id="education_description_2" contenteditable="true">bachelors in software engineering</p>
+                      <span class="editblack" id="education_year_2" contenteditable="true">2020</span>
+                    </div>
+                  </div>
+                  <div class="editblack" id="education_3">
+                    <div class="education_cross">
+                      <li class="editblack" id="education_li_3" contenteditable="true">board of intermediate education karachi</li>
+                      <i id="cross_btn_edu3" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="education_detail_3">
+                      <p class="editblack" id="education_description_3" contenteditable="true">intermediate in pre-engineering</p>
+                      <span class="editblack" id="education_year_3" contenteditable="true">2018</span>
+                    </div>
+                  </div>
+                  <div class="editblack" id="education_4">
+                    <div class="education_cross">
+                      <li class="editblack" id="education_li_4" contenteditable="true">board of secondary education karachi</li>
+                      <i id="cross_btn_edu4" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="education_detail_4">
+                      <p class="editblack" id="education_description_4" contenteditable="true">matriculation in science</p>
+                      <span class="editblack" id="education_year_4" contenteditable="true">2026</span>
+                    </div>
+                  </div>
+                  <div class="editblack" id="education_5">
+                    <div class="education_cross">
+                      <li class="editblack added_education" id="education_li_5" contenteditable="true">add institution</li>
+                      <i id="cross_btn_edu5" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="education_detail_5">
+                      <p class="editblack added_education" id="education_description_5" contenteditable="true">add degree</p>
+                      <span class="editblack added_education" id="education_year_5" contenteditable="true">add year</span>
+                    </div>
+                  </div>
+                  <div class="editblack" id="education_6">
+                    <div class="education_cross">
+                      <li class="editblack added_education" id="education_li_6" contenteditable="true">add institution</li>
+                      <i id="cross_btn_edu6" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="education_detail_6">
+                      <p class="editblack added_education" id="education_description_6" contenteditable="true">add degree</p>
+                      <span class="editblack added_education" id="education_year_6" contenteditable="true">add year</span>
+                    </div>
+                  </div>
+                  <hr />
+                </ul>
+                <h2>work experience</h2>
+                <ul id="work_exp_ul">
+                  <div class="editblack" id="exp_1">
+                    <div class="work_exp_cross">
+                      <li class="editblack" id="work_exp_li_1" contenteditable="true">ABC software house</li>
+                      <i id="cross_exp1" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="work_exp_detail_1">
+                      <p class="editblack" id="work_exp_description_1" contenteditable="true">full stack developer</p>
+                      <span class="editblack" id="work_exp_year_1" contenteditable="true">2022-Present</span>
+                    </div>
+                  </div>
+                  <div class="editblack" id="exp_2">
+                    <div class="work_exp_cross">
+                      <li class="editblack" id="work_exp_li_2" contenteditable="true">ABC IT company</li>
+                      <i id="cross_exp2" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="work_exp_detail_2">
+                      <p class="editblack" id="work_exp_description_2" contenteditable="true">frontend developer</p>
+                      <span class="editblack" id="work_exp_year_2" contenteditable="true">2020-2022</span>
+                    </div>
+                  </div>
+                  <div class="editblack" id="exp_3">
+                    <div class="work_exp_cross">
+                      <li class="editblack" id="work_exp_li_3" contenteditable="true">ABC company</li>
+                      <i id="cross_exp3" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="work_exp_detail_3">
+                      <p class="editblack" id="work_exp_description_3" contenteditable="true">web designer</p>
+                      <span class="editblack" id="work_exp_year_3" contenteditable="true">2018-2020</span>
+                    </div>
+                  </div>
+                  <div class="editblack" id="exp_4">
+                    <div class="work_exp_cross">
+                      <li class="editblack added_education" id="work_exp_li_4" contenteditable="true">add company</li>
+                      <i id="cross_exp4" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="work_exp_detail_4">
+                      <p class="editblack added_education" id="work_exp_description_4" contenteditable="true">add designation</p>
+                      <span class="editblack added_education" id="work_exp_year_4" contenteditable="true">duration</span>
+                    </div>
+                  </div>
+                  <div class="editblack" id="exp_5">
+                    <div class="work_exp_cross">
+                      <li class="editblack added_education" id="work_exp_li_5" contenteditable="true">add company</li>
+                      <i id="cross_exp5" class="fa fa-close cross_btn" aria-hidden="true"></i>
+                    </div>
+                    <div id="work_exp_detail_5">
+                      <p class="editblack added_education" id="work_exp_description_5" contenteditable="true">add dsignation</p>
+                      <span class="editblack added_education" id="work_exp_year_5" contenteditable="true">duration</span>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </page>
+      </div>
+    </div>
+    <!-- <button type="button" onclick="getprint()">Print</button> -->
+    <!-- <script src="bootstrap/js/index.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.0/html2pdf.bundle.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('#add_sec_btn').click(function (event) {
+          event.stopPropagation();
+          $('#Id_mult_sec').toggle(50);
+        });
+
+        $(document).click(function (event) {
+          if (!$(event.target).closest('#Id_mult_sec').length && !$(event.target).is('#add_sec_btn')) {
+            $('#Id_mult_sec').hide(50);
+          }
+        });
+      });
+    
+      var comp_skill = document.getElementById('skills_div');
+      var cross_btn_comp_skill = document.getElementById('cross_btn_comp_skill');
+      var cross_btn_lang = document.getElementById('cross_btn_lang');
+      var lang_skill = document.getElementById('skills_div_2');
+      var other_skill1 = document.getElementById('skills_div_3');
+      var other_skill2 = document.getElementById('skills_div_4');
+      var website = document.getElementById('website');
+      var cross_btn = document.getElementById('cross_btn_web');
+      var cross_btn_2 = document.getElementById('cross_btn_web_2');
+      var add_skill_btn = document.getElementById('add_skill');
+      var add_certificate_btn = document.getElementById('add_certificate');
+      var add_honour_btn = document.getElementById('add_honour');
+      var add_edu_btn = document.getElementById('add_education');
+      var add_exp_btn = document.getElementById('add_exp');
+      var honour_awards = document.getElementById('honour_awards');
+      var honour1 = document.getElementById('honour1');
+      var honour2 = document.getElementById('honour2');
+      var honour3 = document.getElementById('honour3');
+      var honour4 = document.getElementById('honour4');
+      var certifications = document.getElementById('certifications');
+      var certificate1 = document.getElementById('certificate1');
+      var certificate2 = document.getElementById('certificate2');
+      var certificate3 = document.getElementById('certificate3');
+      var education_1 = document.getElementById('education_1');
+      var education_2 = document.getElementById('education_2');
+      var education_3 = document.getElementById('education_3');
+      var education_4 = document.getElementById('education_4');
+      var education_5 = document.getElementById('education_5');
+      var education_6 = document.getElementById('education_6');
+      var exp_1 = document.getElementById('exp_1');
+      var exp_2 = document.getElementById('exp_2');
+      var exp_3 = document.getElementById('exp_3');
+      var exp_4 = document.getElementById('exp_4');
+      var exp_5 = document.getElementById('exp_5');
+      var cross_btn_comp_skill = document.getElementById('cross_btn_comp_skill');
+      var cross_btn_lang_skill = document.getElementById('cross_btn_lang_skill');
+      var cross_btn_other_skill1 = document.getElementById('cross_btn_other_skill1');
+      var cross_btn_other_skill2 = document.getElementById('cross_btn_other_skill2');
+      var cross_btn_honour_skill = document.getElementById('cross_btn_honour_skill');
+      var cross_btn_certifications = document.getElementById('cross_btn_certifications');
+      var cross_btn_cert1 = document.getElementById('cross_btn_cert1');
+      var cross_btn_cert2 = document.getElementById('cross_btn_cert2');
+      var cross_btn_cert3 = document.getElementById('cross_btn_cert3');
+      var cross_btn_honour1 = document.getElementById('cross_btn_honour1');
+      var cross_btn_honour2 = document.getElementById('cross_btn_honour2');
+      var cross_btn_honour3 = document.getElementById('cross_btn_honour3');
+      var cross_btn_honour4 = document.getElementById('cross_btn_honour4');
+      var cross_btn_edu1 = document.getElementById('cross_btn_edu1');
+      var cross_btn_edu2 = document.getElementById('cross_btn_edu2');
+      var cross_btn_edu3 = document.getElementById('cross_btn_edu3');
+      var cross_btn_edu4 = document.getElementById('cross_btn_edu4');
+      var cross_btn_edu5 = document.getElementById('cross_btn_edu5');
+      var cross_btn_edu6 = document.getElementById('cross_btn_edu6');
+      var cross_exp1 = document.getElementById('cross_exp1');
+      var cross_exp2 = document.getElementById('cross_exp2');
+      var cross_exp3 = document.getElementById('cross_exp3');
+      var cross_exp4 = document.getElementById('cross_exp4');
+      var cross_exp5 = document.getElementById('cross_exp5');
+      exp_5.addEventListener('mouseover', function () {
+        cross_exp5.style.display = 'block';
+      });
+      cross_exp5.addEventListener('click', function () {
+        exp_5.style.display = 'none';
+      });
+      exp_5.addEventListener('mouseleave', function () {
+        cross_exp5.style.display = 'none';
+      });
+      exp_4.addEventListener('mouseover', function () {
+        cross_exp4.style.display = 'block';
+      });
+      cross_exp4.addEventListener('click', function () {
+        exp_4.style.display = 'none';
+      });
+      exp_4.addEventListener('mouseleave', function () {
+        cross_exp4.style.display = 'none';
+      });
+      exp_3.addEventListener('mouseover', function () {
+        cross_exp3.style.display = 'block';
+      });
+      cross_exp3.addEventListener('click', function () {
+        exp_3.remove();
+      });
+      exp_3.addEventListener('mouseleave', function () {
+        cross_exp3.style.display = 'none';
+      });
+      exp_2.addEventListener('mouseover', function () {
+        cross_exp2.style.display = 'block';
+      });
+      cross_exp2.addEventListener('click', function () {
+        exp_2.remove();
+      });
+      exp_2.addEventListener('mouseleave', function () {
+        cross_exp2.style.display = 'none';
+      });
+      exp_1.addEventListener('mouseover', function () {
+        cross_exp1.style.display = 'block';
+      });
+      cross_exp1.addEventListener('click', function () {
+        exp_1.remove();
+      });
+      exp_1.addEventListener('mouseleave', function () {
+        cross_exp1.style.display = 'none';
+      });
+      education_4.addEventListener('mouseover', function () {
+        cross_btn_edu4.style.display = 'block';
+      });
+      cross_btn_edu4.addEventListener('click', function () {
+        education_4.remove();
+      });
+      education_4.addEventListener('mouseleave', function () {
+        cross_btn_edu4.style.display = 'none';
+      });
+      education_5.addEventListener('mouseover', function () {
+        cross_btn_edu5.style.display = 'block';
+      });
+      cross_btn_edu5.addEventListener('click', function () {
+        education_5.style.display = 'none';
+      });
+      education_5.addEventListener('mouseleave', function () {
+        cross_btn_edu5.style.display = 'none';
+      });
+      education_6.addEventListener('mouseover', function () {
+        cross_btn_edu6.style.display = 'block';
+      });
+      cross_btn_edu6.addEventListener('click', function () {
+        education_6.style.display = 'none';
+      });
+      education_6.addEventListener('mouseleave', function () {
+        cross_btn_edu6.style.display = 'none';
+      });
+      education_3.addEventListener('mouseover', function () {
+        cross_btn_edu3.style.display = 'block';
+      });
+      cross_btn_edu3.addEventListener('click', function () {
+        education_3.remove();
+      });
+      education_3.addEventListener('mouseleave', function () {
+        cross_btn_edu3.style.display = 'none';
+      });
+      education_2.addEventListener('mouseover', function () {
+        cross_btn_edu2.style.display = 'block';
+      });
+      cross_btn_edu2.addEventListener('click', function () {
+        education_2.remove();
+      });
+      education_2.addEventListener('mouseleave', function () {
+        cross_btn_edu2.style.display = 'none';
+      });
+      education_1.addEventListener('mouseover', function () {
+        cross_btn_edu1.style.display = 'block';
+      });
+      cross_btn_edu1.addEventListener('click', function () {
+        education_1.remove();
+      });
+      education_1.addEventListener('mouseleave', function () {
+        cross_btn_edu1.style.display = 'none';
+      });
+      certificate1.addEventListener('mouseover', function () {
+        cross_btn_cert1.style.display = 'block';
+      });
+      cross_btn_cert1.addEventListener('click', function () {
+        certificate1.remove();
+      });
+      certificate1.addEventListener('mouseleave', function () {
+        cross_btn_cert1.style.display = 'none';
+      });
+      certificate2.addEventListener('mouseover', function () {
+        cross_btn_cert2.style.display = 'block';
+      });
+      cross_btn_cert2.addEventListener('click', function () {
+        certificate2.style.display = 'none';
+      });
+      certificate2.addEventListener('mouseleave', function () {
+        cross_btn_cert2.style.display = 'none';
+      });
+      certificate3.addEventListener('mouseover', function () {
+        cross_btn_cert3.style.display = 'block';
+      });
+      cross_btn_cert3.addEventListener('click', function () {
+        certificate3.style.display = 'none';
+      });
+      certificate3.addEventListener('mouseleave', function () {
+        cross_btn_cert3.style.display = 'none';
+      });
+      honour2.addEventListener('mouseover', function () {
+        cross_btn_honour2.style.display = 'block';
+      });
+      cross_btn_honour2.addEventListener('click', function () {
+        honour2.remove();
+      });
+      honour2.addEventListener('mouseleave', function () {
+        cross_btn_honour2.style.display = 'none';
+      });
+      honour1.addEventListener('mouseover', function () {
+        cross_btn_honour1.style.display = 'block';
+      });
+      cross_btn_honour1.addEventListener('click', function () {
+        honour1.remove();
+      });
+      honour1.addEventListener('mouseleave', function () {
+        cross_btn_honour1.style.display = 'none';
+      });
+      honour3.addEventListener('mouseover', function () {
+        cross_btn_honour3.style.display = 'block';
+      });
+      cross_btn_honour3.addEventListener('click', function () {
+        honour3.style.display = 'none';
+      });
+      honour3.addEventListener('mouseleave', function () {
+        cross_btn_honour3.style.display = 'none';
+      });
+      honour4.addEventListener('mouseover', function () {
+        cross_btn_honour4.style.display = 'block';
+      });
+      cross_btn_honour4.addEventListener('click', function () {
+        honour4.style.display = 'none';
+      });
+      honour4.addEventListener('mouseleave', function () {
+        cross_btn_honour4.style.display = 'none';
+      });
+      certifications.addEventListener('mouseover', function () {
+        cross_btn_certifications.style.display = 'block';
+      });
+      cross_btn_certifications.addEventListener('click', function () {
+        certifications.remove();
+      });
+      certifications.addEventListener('mouseleave', function () {
+        cross_btn_certifications.style.display = 'none';
+      });
+      honour_awards.addEventListener('mouseover', function () {
+        cross_btn_honour_skill.style.display = 'block';
+      });
+      cross_btn_honour_skill.addEventListener('click', function () {
+        honour_awards.remove();
+      });
+      honour_awards.addEventListener('mouseleave', function () {
+        cross_btn_honour_skill.style.display = 'none';
+      });
+      lang_skill.addEventListener('mouseover', function () {
+        cross_btn_lang_skill.style.display = 'block';
+      });
+      cross_btn_lang_skill.addEventListener('click', function () {
+        lang_skill.remove();
+      });
+      lang_skill.addEventListener('mouseleave', function () {
+        cross_btn_lang_skill.style.display = 'none';
+      });
+      comp_skill.addEventListener('mouseover', function () {
+        cross_btn_comp_skill.style.display = 'block';
+      });
+      cross_btn_comp_skill.addEventListener('click', function () {
+        comp_skill.remove();
+      });
+      comp_skill.addEventListener('mouseleave', function () {
+        cross_btn_comp_skill.style.display = 'none';
+      });
+      other_skill1.addEventListener('mouseover', function () {
+        cross_btn_other_skill1.style.display = 'block';
+        other_skill1.style.display = 'flex';
+        other_skill1.style.justifyContent = 'space-between';
+        other_skill1.style.alignItems = 'center';
+      });
+      cross_btn_other_skill1.addEventListener('click', function () {
+        other_skill1.style.display = 'none';
+      });
+      other_skill1.addEventListener('mouseleave', function () {
+        cross_btn_other_skill1.style.display = 'none';
+      });
+      other_skill2.addEventListener('mouseover', function () {
+        cross_btn_other_skill2.style.display = 'block';
+        other_skill2.style.display = 'flex';
+        other_skill2.style.justifyContent = 'space-between';
+        other_skill2.style.alignItems = 'center';
+      });
+      cross_btn_other_skill2.addEventListener('click', function () {
+        other_skill2.style.display = 'none';
+      });
+      other_skill2.addEventListener('mouseleave', function () {
+        cross_btn_other_skill2.style.display = 'none';
+      });
+      website.addEventListener('mouseover', function () {
+        cross_btn.style.display = 'block';
+      });
+      website.addEventListener('mouseleave', function () {
+        cross_btn.style.display = 'none';
+      });
+      cross_btn.addEventListener('click', function () {
+        website.remove();
+      });
+      add_skill_btn.addEventListener('click', function () {
+        if (other_skill1.style.display !== 'block') {
+          other_skill1.style.display = 'block';
+        } else {
+          other_skill2.style.display = 'block';
+        }
+      });
+      add_certificate_btn.addEventListener('click', function () {
+        if (certificate2.style.display !== 'block') {
+          certificate2.style.display = 'block';
+        } else {
+          certificate3.style.display = 'block';
+        }
+      });
+      add_honour_btn.addEventListener('click', function () {
+        if (honour3.style.display !== 'block') {
+          honour3.style.display = 'block';
+        } else {
+          honour4.style.display = 'block';
+        }
+      });
+      add_edu_btn.addEventListener('click', function () {
+        if (education_5.style.display !== 'block') {
+          education_5.style.display = 'block';
+        } else {
+          education_6.style.display = 'block';
+        }
+      });
+      add_exp_btn.addEventListener('click', function () {
+        if (exp_4.style.display !== 'block') {
+          exp_4.style.display = 'block';
+        } else {
+          exp_5.style.display = 'block';
+        }
+      });
+      var work_exp_li_4 = document.getElementById('work_exp_li_4');
+      work_exp_li_4.addEventListener('click', function () {
+        if (work_exp_li_4 !== '') {
+          work_exp_li_4.innerHTML = '';
+          work_exp_li_4.style.color = 'black';
+        }
+      });
+      var work_exp_description_4 = document.getElementById('work_exp_description_4');
+      work_exp_description_4.addEventListener('click', function () {
+        if (work_exp_description_4.innerHTML !== '') {
+          work_exp_description_4.innerHTML = '';
+          work_exp_description_4.style.color = 'black';
+        }
+      });
+      var work_exp_year_4 = document.getElementById('work_exp_year_4');
+      work_exp_year_4.addEventListener('click', function () {
+        if (work_exp_year_4.innerHTML !== '') {
+          work_exp_year_4.innerHTML = '';
+          work_exp_year_4.style.color = 'black';
+        }
+      });
+      var work_exp_li_5 = document.getElementById('work_exp_li_5');
+      work_exp_li_5.addEventListener('click', function () {
+        if (work_exp_li_5 !== '') {
+          work_exp_li_5.innerHTML = '';
+          work_exp_li_5.style.color = 'black';
+        }
+      });
+      var work_exp_description_5 = document.getElementById('work_exp_description_5');
+      work_exp_description_5.addEventListener('click', function () {
+        if (work_exp_description_5.innerHTML !== '') {
+          work_exp_description_5.innerHTML = '';
+          work_exp_description_5.style.color = 'black';
+        }
+      });
+      var work_exp_year_5 = document.getElementById('work_exp_year_5');
+      work_exp_year_5.addEventListener('click', function () {
+        if (work_exp_year_5.innerHTML !== '') {
+          work_exp_year_5.innerHTML = '';
+          work_exp_year_5.style.color = 'black';
+        }
+      });
+
+      var education_li_5 = document.getElementById('education_li_5');
+      education_li_5.addEventListener('click', function () {
+        if (education_li_5.innerHTML !== '') {
+          education_li_5.innerHTML = '';
+          education_li_5.style.color = 'black';
+        }
+      });
+      var education_description_5 = document.getElementById('education_description_5');
+      education_description_5.addEventListener('click', function () {
+        if (education_description_5.innerHTML !== '') {
+          education_description_5.innerHTML = '';
+          education_description_5.style.color = 'black';
+        }
+      });
+      var education_year_5 = document.getElementById('education_year_5');
+      education_year_5.addEventListener('click', function () {
+        if (education_year_5.innerHTML !== '') {
+          education_year_5.innerHTML = '';
+          education_year_5.style.color = 'black';
+        }
+      });
+      var education_li_6 = document.getElementById('education_li_6');
+      education_li_6.addEventListener('click', function () {
+        if (education_li_6.innerHTML !== '') {
+          education_li_6.innerHTML = '';
+          education_li_6.style.color = 'black';
+        }
+      });
+      var education_description_6 = document.getElementById('education_description_6');
+      education_description_6.addEventListener('click', function () {
+        if (education_description_6.innerHTML !== '') {
+          education_description_6.innerHTML = '';
+          education_description_6.style.color = 'black';
+        }
+      });
+      var education_year_6 = document.getElementById('education_year_6');
+      education_year_6.addEventListener('click', function () {
+        if (education_year_6.innerHTML !== '') {
+          education_year_6.innerHTML = '';
+          education_year_6.style.color = 'black';
+        }
+      });
+
+      function addphoto() {
+        var profile_photo = document.getElementById('profile-photo');
+        var input_img = document.getElementById('img_hover');
+        input_img.addEventListener('change', function () {
+          profile_photo.src = URL.createObjectURL(input_img.files[0]);
+        });
+      };
+      document.getElementById('download_btn').addEventListener('click', function () {
+        const container = document.getElementById('content_div');
+        console.log(container);
+
+        html2canvas(container).then(function (canvas) {
+          const dataURL = canvas.toDataURL('image/png');
+          console.log(dataURL)
+
+          const downloadLink = document.createElement('a');
+          downloadLink.href = dataURL;
+          downloadLink.download = 'cv.png';
+
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+
+          document.body.removeChild(downloadLink);
+        });
+      });
+
+//       document.getElementById('download_btn').addEventListener('click', function () {
+//     const contentDiv = document.getElementById('content_div');
+
+//     // Configure the PDF options
+//     const pdfOptions = {
+//         margin: 10,
+//         filename: 'cv.pdf',
+//         image: { type: 'jpeg', quality: 0.98 },
+//         html2canvas: { scale: 2 },
+//         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+//     };
+
+//     // Use html2pdf.js to generate PDF
+//     html2pdf().from(contentDiv).set(pdfOptions).outputPdf().then(function (pdf) {
+//         // Trigger the download of the PDF file
+//         const blob = new Blob([pdf], { type: 'application/pdf' });
+//         const url = URL.createObjectURL(blob);
+//         const a = document.createElement('a');
+//         a.href = url;
+//         a.download = 'cv.pdf';
+//         a.style.display = 'none'; // Hide the link
+//         document.body.appendChild(a);
+//         a.click();
+//         document.body.removeChild(a);
+//         URL.revokeObjectURL(url);
+//     });
+// });
+       
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Sign Up Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #e9f1f6;
+      }
+      .red {
+        color: red;
+      }
+
+      .container_s {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 400px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #005c99;
+      }
+
+      input[type='text'],
+      input[type='password'],
+      input[type='email'],
+      button {
+        width: 100%;
+        padding: 10px;
+        /* margin-bottom: 15px; */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      input:focus {
+        border: 2px solid #005c99;
+      }
+
+      button {
+        background-color: #005c99;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #004e80;
+      }
+
+      .form-footer {
+        text-align: center;
+      }
+
+      .form-footer p {
+        margin: 0;
+      }
+
+      .form-footer a {
+        color: #005c99;
+        text-decoration: none;
+      }
+
+      #cross_btn {
+        position: fixed;
+        top: 2%;
+        left: 2%;
+        width: 60px;
+        height: 60px;
+        /* background: #005c9968; */
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      #cross_btn i {
+        color: white;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="index.html">
+      <div id="cross_btn">
+        <i class="fa fa-times"></i>
+      </div>
+    </a>
+    <div class="container_s">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" id="fullName" placeholder="Full Name" required />
+        <span class="red" id="name_error"></span>
+        <br />
+        <br />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <span class="red" id="email_error"></span>
+        <br />
+        <br />
+        <input type="password" id="password" placeholder="Password" required />
+        <span class="red" id="pass_error"></span>
+        <br />
+        <br />
+        <input type="password" id="password_confirm" placeholder="Confirm Password" required />
+        <span class="red" id="conf_pass_error"></span>
+        <br />
+        <br />
+        <button type="button" onclick="btnsignup()">Sign Up</button>
+        <br />
+        <br />
+      </form>
+      <div class="form-footer">
+        <p>
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+      </div>
+    </div>
+    <script>
+      function btnsignup() {
+        var fullName = document.getElementById('fullName').value;
+        var name_error = document.getElementById('name_error');
+        var name_regexp = /[a-z]{3,}[0-9]{0,}/;
+        var name_input_check = name_regexp.test(fullName);
+        var email = document.getElementById('email').value;
+        var email_error = document.getElementById('email_error');
+        var email_regexp = /[a-z]{3,}[0-9]{0,}@[a-z]{4,}.[a-z]{2,}/;
+        var email_input_check = email_regexp.test(email);
+        var password = document.getElementById('password').value;
+        var pass_error = document.getElementById('pass_error');
+        var pass_regexp = /.{8,}/;
+        var pass_input_check = pass_regexp.test(password);
+        var password_confirm = document.getElementById('password_confirm').value;
+        if (fullName == '') {
+          name_error.innerHTML = '*write the name here*';
+          email_error.innerHTML = '';
+          pass_error.innerHTML = '';
+          conf_pass_error.innerHTML = '';
+        } else if (!name_input_check) {
+          name_error.innerHTML = '*write correct name*';
+          email_error.innerHTML = '';
+          pass_error.innerHTML = '';
+          conf_pass_error.innerHTML = '';
+        } else if (email == '') {
+          email_error.innerHTML = '*write email here*';
+          name_error.innerHTML = '';
+          pass_error.innerHTML = '';
+          conf_pass_error.innerHTML = '';
+        } else if (!email_input_check) {
+          email_error.innerHTML = '*write correct email*';
+          name_error.innerHTML = '';
+          pass_error.innerHTML = '';
+          conf_pass_error.innerHTML = '';
+        } else if (password == '') {
+          pass_error.innerHTML = '*write password here*';
+          name_error.innerHTML = '';
+          email_error.innerHTML = '';
+          conf_pass_error.innerHTML = '';
+        } else if (!pass_input_check) {
+          pass_error.innerHTML = '*password must contain atleast 8 characters*';
+          name_error.innerHTML = '';
+          email_error.innerHTML = '';
+          conf_pass_error.innerHTML = '';
+        } else if (password !== password_confirm) {
+          conf_pass_error.innerHTML = '*password does not match*';
+          name_error.innerHTML = '';
+          email_error.innerHTML = '';
+          pass_error.innerHTML = '';
+        } else {
+          // Check if data already exists in local storage
+          let existingData = localStorage.getItem('userdata');
+          let dataArray = [];
+
+          if (existingData) {
+            // If data exists, parse it to an array
+            dataArray = JSON.parse(existingData);
+            var userData = {
+              fullName: fullName,
+              email: email,
+              password: password,
+              user_f: fullName.charAt(0),
+            };
+
+            // console.log(user_f)
+
+            var fetched = dataArray.some((x) => x.email == email && x.password == password);
+
+            if (fetched) {
+
+              alert('user already exist, try to log in');
+              document.getElementById('signupForm').reset();
+              name_error.innerHTML = '';
+              email_error.innerHTML = '';
+              pass_error.innerHTML = '';
+              conf_pass_error.innerHTML = '';
+            } else {
+              dataArray.push(userData);
+              localStorage.setItem('userdata', JSON.stringify(dataArray));
+              localStorage.setItem('current_user', userData.user_f);
+              document.getElementById('signupForm').reset();
+
+              alert('Sign up successful!');
+              // document.write(userData.user_f)
+              window.location.href = 'index.html';
+            }
+          } else {
+            var userData = {
+              fullName: fullName,
+              email: email,
+              password: password,
+              user_f: fullName.charAt(0),
+            };
+            dataArray.push(userData);
+            localStorage.setItem('userdata', JSON.stringify(dataArray));
+            localStorage.setItem('current_user', userData.user_f);
+            alert('Sign up successful!');
+            window.location.href = 'index.html';
+
+            document.getElementById('signupForm').reset();
+          }
+        }
+      }
+
+      // document.getElementById('signupForm').addEventListener('submit', handleFormSubmit);
+    </script>
+  </body>
+</html>

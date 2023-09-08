@@ -1,0 +1,164 @@
+/* TEMPLATE 4 */
+/* page[size="A4"] {
+    background: white;
+    width: 21cm;
+    height: 29.7cm;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  } */
+  page[size="A4"] {
+    width: 21cm;
+    display: block;
+    font-size: fit-content;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+  .divflex{
+    display: flex;
+}
+.temp_skills_6{
+    width: 300px;
+}
+.gray{
+    color: rgb(184, 184, 184);
+}
+
+.flexdiv{
+    display: flex;
+
+  }
+
+.t4head{
+    display: flex;
+    background-color: #4e8dec;
+    color: #fff;
+    padding: 10px;
+}
+.t4div1{
+    /* width: 50%; */
+    padding:0px 30px;
+}
+.t4info{
+    padding: 20px 30px;
+}
+.t4lidiv1{
+    width: 50%;
+}
+.color{
+    margin-top: 15px;
+    background-color: #4e8dec;
+    padding: 25px;
+}
+/* .each_skills_t4{
+    display: flex;
+    align-items: center;
+} */
+#t4_skill_1_cross,#t4_skill_2_cross,#t4_skill_3_cross,#t4_skill_4_cross,#extra_skill_1_cross,#extra_skill_2_cross,#extra_skill_3_cross,#extra_skill_4_cross{
+    display: none;
+}
+#div_t4_skill_1:hover #t4_skill_1_cross{
+    display: block  ;
+}
+#div_t4_skill_2:hover #t4_skill_2_cross{
+    display: block  ;
+}
+#div_t4_skill_3:hover #t4_skill_3_cross{
+    display: block  ;
+}
+#div_t4_skill_4:hover #t4_skill_4_cross{
+    display: block  ;
+}
+#extra_skill_1:hover #extra_skill_1_cross{
+    display: block  ;
+}
+#extra_skill_2:hover #extra_skill_2_cross{
+    display: block  ;
+}
+#extra_skill_3:hover #extra_skill_3_cross{
+    display: block  ;
+}
+#extra_skill_4:hover #extra_skill_4_cross{
+    display: block  ;
+}
+#extra_skill_1,#extra_skill_2, #extra_skill_3, #extra_skill_4{
+    display: none;
+}
+#t6_exp_1_cross, #t6_exp_2_cross,#t6_exp_3_cross,#t6_exp_4_cross,#t6_exp_5_cross,#t6_exp_6_cross{
+    display: none;
+}
+#t6_exp_1:hover #t6_exp_1_cross{
+    display: block;
+}
+#t6_exp_2:hover #t6_exp_2_cross{
+    display: block;
+}
+#t6_exp_3:hover #t6_exp_3_cross{
+    display: block;
+}
+#t6_exp_4:hover #t6_exp_4_cross{
+    display: block;
+}
+#t6_exp_5:hover #t6_exp_5_cross{
+    display: block;
+}
+#t6_exp_6:hover #t6_exp_6_cross{
+    display: block;
+}
+#t6_exp_3,#t6_exp_4,#t6_exp_5,#t6_exp_6{
+    display: none ;
+}
+#t6_exp_3 li{
+    list-style: none;
+}
+#t6_edu_1_cross, #t6_edu_2_cross, #t6_edu_3_cross, #t6_edu_4_cross{
+    display: none;
+}
+#t6_education_1:hover #t6_edu_1_cross{
+    display: block;
+}
+#t6_education_2:hover #t6_edu_2_cross{
+    display: block;
+}
+#t6_education_3:hover #t6_edu_3_cross{
+    display: block;
+}
+#t6_education_4:hover #t6_edu_4_cross{
+    display: block;
+}
+#t6_education_2,#t6_education_3,#t6_education_4{
+    display: none;
+}
+#t6_lang_1_cross, #t6_lang_2_cross, #t6_lang_3_cross, #t6_lang_4_cross{
+    display: none;
+}
+#t6_lang_1:hover #t6_lang_1_cross{
+    display: block;
+}
+#t6_lang_2:hover #t6_lang_2_cross{
+    display: block;
+}#t6_lang_3:hover #t6_lang_3_cross{
+    display: block;
+}#t6_lang_4:hover #t6_lang_4_cross{
+    display: block;
+}
+#t6_cert_1_cross, #t6_cert_2_cross, #t6_cert_3_cross, #t6_cert_4_cross{
+display: none;
+}
+#t6_cert_1:hover #t6_cert_1_cross{
+    display: block;
+}
+#t6_cert_2:hover #t6_cert_2_cross{
+    display: block;
+}
+#t6_cert_3:hover #t6_cert_3_cross{
+    display: block;
+}
+#t6_cert_4:hover #t6_cert_4_cross{
+    display: block;
+}
+#t6_cert_3, #t6_cert_4{
+    display: none;
+}

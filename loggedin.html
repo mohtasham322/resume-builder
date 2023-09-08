@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML -->
+  <div id="login-container">
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Log In</button>
+  </div>
+  <div id="welcome-container" style="display: none;">
+    <h1>Welcome, <span id="loggedInUser"></span>!</h1>
+    <button onclick="logout()">Log Out</button>
+  </div>
+
+  <script>
+    // script.js
+
+// Check if the user is already logged in
+document.addEventListener("DOMContentLoaded", () => {
+  const isLoggedIn = localStorage.getItem("loggedIn");
+  if (isLoggedIn) {
+    showWelcomePage(isLoggedIn);
+  }
+});
+
+// Function to handle login
+function login() {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // You can implement a proper login validation here
+  // For the sake of simplicity, let's just check if both fields are filled
+  if (username && password) {
+    // Store user information in localStorage to keep them logged in
+    const user = {
+      username,
+      loggedIn: true
+    };
+    localStorage.setItem("user", JSON.stringify(user));
+    showWelcomePage(username);
+  } else {
+    alert("Please enter both username and password.");
+  }
+}
+
+// Function to handle logout
+function logout() {
+  localStorage.removeItem("user");
+  document.getElementById("login-container").style.display = "block";
+  document.getElementById("welcome-container").style.display = "none";
+}
+
+// Function to show the welcome page after login
+function showWelcomePage(username) {
+  document.getElementById("login-container").style.display = "none";
+  document.getElementById("welcome-container").style.display = "block";
+  document.getElementById("loggedInUser").textContent = username;
+}
+
+// Check if the user is logged in and display the welcome page accordingly
+const user = JSON.parse(localStorage.getItem("user"));
+if (user && user.loggedIn) {
+  showWelcomePage(user.username);
+}
+
+  </script>
+
+
+</body>
+</html>

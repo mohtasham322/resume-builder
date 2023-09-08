@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container {
+  width: 300px; /* Set the width of the container as per your requirements */
+  height: auto; /* Or set a fixed height if needed */
+  border: 1px solid #ccc; /* Just for visualization purposes */
+  overflow: hidden; /* Hide the content that overflows the container */
+}
+
+.text {
+  white-space: nowrap; /* Prevent the text from wrapping to a new line */
+  text-overflow: ellipsis; /* Show an ellipsis (...) when text overflows */
+  font-size: 16px; /* Set an initial font size */
+}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<p class="text" id="adjustable-text">lorem ipsum is the font sytkejskj ojoijoij  jojoijlk kkijh kjoij ojo jojoi lkjoiji  kojoiujoij kljoijiojkk jkjoijkjk kkkkkkkkkkkkkkkkkkkkk</p>
+	  </div>
+	  
+	  
+	  <script>
+		function adjustFontSize() {
+  const container = document.querySelector('.container');
+  const text = document.getElementById('adjustable-text');
+
+  const containerWidth = container.clientWidth;
+  const textWidth = text.scrollWidth;
+  const currentFontSize = parseInt(window.getComputedStyle(text).fontSize);
+
+  if (textWidth > containerWidth) {
+    const newFontSize = currentFontSize - 1;
+    text.style.fontSize = newFontSize + 'px';
+    adjustFontSize(); // Call the function recursively until the text fits
+  }
+}
+
+// Call the function when the page loads and on window resize
+window.addEventListener('load', adjustFontSize);
+window.addEventListener('resize', adjustFontSize);
+
+	  </script>
+	  
+</body>
+</html>

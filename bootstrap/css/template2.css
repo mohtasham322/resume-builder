@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(161, 158, 158) !important;
+} 
+page[size="A4"] {
+    background: white;
+    width: 21cm;
+    height: 29.7cm;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+  .h3{
+    color: #323b4c;
+}
+.divflex{
+    display: flex;
+}
+
+    .t2div1{
+        width: 40%;
+        margin-bottom: 50px;
+        border-right: 1px solid rgb(158, 156, 156);
+        padding-top: 26px;
+        padding-right: 10px ;
+        padding-left: 30px ;
+    }
+    
+    .t2div2{
+        width: 80% ;
+        padding-left: 35px ;
+        padding-right: 25px ;
+        padding-top: 26px;
+    }
+   .yeardiv1{
+    width: 50%;
+        text-align: end;
+        font-weight: bold;
+    }
+    .yeardiv2{
+        width: 35%;
+        text-align: end;
+        font-weight: bold;
+    }
+    .head{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    background-color: #323b4c;
+    color: #fff;
+text-align: center;
+}
+.info{
+   text-align:  center;
+    border-bottom: 1px solid rgb(158, 156, 156);
+   padding-top: 8px;
+   
+}
+.container1{
+    background-color: #fff ;
+}
+.icons{
+    background-color: #323b4c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 100%;
+}
+.contact{
+    width: 32%;
+}
+
