@@ -81,7 +81,8 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background:  linear-gradient(45deg, rgba(62, 62, 62, 0.761), rgba(0, 0, 0, 0.527)),url("../../images/banner_background.jpg");
+    background:  linear-gradient(45deg, rgba(0, 0, 0, 0.615), rgba(0, 0, 0, 0.678)),url("../../images/banner_background.jpg");
+    /* background:  linear-gradient(45deg, rgba(49, 49, 49, 0.648), rgba(0, 0, 0, 0.575)),url("../../images/banner_background.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     margin: 30px 0px;

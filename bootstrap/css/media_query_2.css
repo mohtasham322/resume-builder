@@ -38,7 +38,9 @@
         /* padding: 0px -20px; */
         /* padding-left: -100px; */
     }
-    .add_section_btn{
+    .add_sect_div{
+        position: relative;
+        margin-left: 200px;
         display: block;
     }
     .cv_div{
